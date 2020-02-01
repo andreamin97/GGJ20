@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfea5b1086158e04aab442d9ed1c9fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: 10
+  Timer: 20
   timerUI: {fileID: 1211952184}
   canvasObj: {fileID: 966455285}
 --- !u!1 &327849703
@@ -864,9 +864,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   images:
-  - {fileID: 21300000, guid: 1b56de0ada80a8c4dbdd71bab7a5644d, type: 3}
-  - {fileID: 21300000, guid: b7b6b4981ec11fd46b8f7e1625db6601, type: 3}
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: db5572802933f0e4d9b0c6f41d1fb0c3, type: 3}
+  - {fileID: 21300000, guid: b152ca69a4b891442bdcb44c2ed5aa76, type: 3}
+  - {fileID: 21300000, guid: ab12392a6e56bfe4899272d6ad59f4c6, type: 3}
+  - {fileID: 21300000, guid: e5b1c9fed37021a44914d8d619fb13c9, type: 3}
+  - {fileID: 21300000, guid: 0af6e616757ab0944941da354dfd19e0, type: 3}
+  - {fileID: 21300000, guid: 6e5400eb9799e314691052d61dfe1d1f, type: 3}
+  - {fileID: 21300000, guid: c2c5c505f806aee4e9c71cd0451bcaf4, type: 3}
+  - {fileID: 21300000, guid: ec6c0f4498418204fa7bf6789b4108d9, type: 3}
+  - {fileID: 21300000, guid: 4152093f3c78d0d4f97d7f4ea5df4c9f, type: 3}
+  - {fileID: 21300000, guid: 595bdefb212c58e47a65c34a029b2ed3, type: 3}
+  - {fileID: 21300000, guid: f11187d4b00a43c41a42ffd33b1194ad, type: 3}
   drawingCanvas: {fileID: 1511684688}
 --- !u!4 &576202828
 Transform:
@@ -1387,7 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1414,7 +1422,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1749,14 +1757,14 @@ RectTransform:
   m_GameObject: {fileID: 1211952184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.68162, y: 0.68162, z: 0.68162}
   m_Children: []
   m_Father: {fileID: 966455289}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8, y: 146}
+  m_AnchoredPosition: {x: -8, y: 119}
   m_SizeDelta: {x: 231.4, y: 69.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211952186
