@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\DrawManager.cs" />
      <Compile Include="Assets\Scripts\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\SaveScreenshot.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Nicola Dau/Documents/GGJ20/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
