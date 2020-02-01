@@ -2,28 +2,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public float Timer;
+    public float Timer = 20f;
     public GameObject timerUI;
+    public GameObject canvasObj;
     Text timerText;
+    Canvas canvas;
+
     void Start()
     {
-        Timer = 20.00f;
         timerText = timerUI.GetComponent<Text>();
     }
     void Update() 
     {
         Timer -= Time.deltaTime;
         timerText.text = Timer.ToString("f2");
+
+        if(Timer <= 0f)
+        {
+            TakeScreenshot();
+            SceneManager.LoadScene("Post-Game");
+        }   
     }        
     public void TakeScreenshot()
     {
-        /*myCamera.targetTexture = RenderTexture.GetTemporary(Screen.width, Screen.height, 16);
-        takeScreenshotOnNextFrame = true;*/
+        canvas = canvasObj.GetComponent<Canvas>();
+        canvas.enabled = false;
+
         string filename = Time.time.ToString("f6") + ".png";
         ScreenCapture.CaptureScreenshot(filename, 1);
+        Data.filename = filename;
+        Debug.Log(filename);
     }
 }
