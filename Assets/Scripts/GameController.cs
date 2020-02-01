@@ -12,10 +12,12 @@ public class GameController : MonoBehaviour
     public GameObject canvasObj;
     Text timerText;
     Canvas canvas;
+    int ID = 0;
 
     void Start()
     {
         timerText = timerUI.GetComponent<Text>();
+        ID = PlayerPrefs.GetInt("ID", ID);
     }
     void Update() 
     {
@@ -33,9 +35,11 @@ public class GameController : MonoBehaviour
         canvas = canvasObj.GetComponent<Canvas>();
         canvas.enabled = false;
 
-        string filename = Time.time.ToString("f6") + ".png";
+        string filename = ID + ".png";
         ScreenCapture.CaptureScreenshot(filename, 1);
         Data.filename = filename;
         Debug.Log(filename);
+        ID++;
+        PlayerPrefs.SetInt("ID", ID);
     }
 }
