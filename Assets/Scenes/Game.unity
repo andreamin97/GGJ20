@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfea5b1086158e04aab442d9ed1c9fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: 10
+  Timer: 50
   timerUI: {fileID: 1211952184}
   canvasObj: {fileID: 966455285}
 --- !u!1 &327849703
