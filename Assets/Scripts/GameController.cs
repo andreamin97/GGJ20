@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     public GameObject canvasObj;
     Text timerText;
     Canvas canvas;
-    int ID = 0;
+    [HideInInspector] public int ID = 0;
 
     void Start()
     {
