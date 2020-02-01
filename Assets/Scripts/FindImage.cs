@@ -18,6 +18,16 @@ public class FindImage : MonoBehaviour
         image.GetComponent<RawImage>().texture = www.texture;
     }
 
+    IEnumerator SetImage ()
+    {
+        WWW www = new WWW("file:///" + Data.filename);
+        Debug.Log("file:///" + Data.filename);
+        while (!www.isDone)
+            yield return null;
+        GameObject image = GameObject.Find("RawImage");
+        image.GetComponent<RawImage>().texture = www.texture;
+    }
+
     public void SaveScreenshot()
     {
         FileUtil.MoveFileOrDirectory(Data.filename, "C:/GGJ20_Screeshots/" + Data.filename);
