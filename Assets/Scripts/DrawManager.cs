@@ -12,6 +12,7 @@ public class DrawManager : MonoBehaviour
     Vector3 startPos;
 
     DrawingCanvas dc;
+    private int layerNumber = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,8 @@ public class DrawManager : MonoBehaviour
             if (dc.isOnCanvas)
             {
                 trail = (GameObject)Instantiate(drawPrefab, this.transform.position, Quaternion.identity);
+                trail.GetComponent<TrailRenderer>().sortingOrder = layerNumber;
+                layerNumber++;
 
                 Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
                 float _dis;
@@ -49,6 +52,13 @@ public class DrawManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ChangeColor (Color newColor)
+    {
+        trailRenderer = drawPrefab.GetComponent<TrailRenderer>();
+        trailRenderer.startColor = newColor;
+        trailRenderer.endColor = newColor;
     }
 
     public void ChangeColorToRed()
