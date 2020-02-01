@@ -31,7 +31,7 @@ public class DrawManager : MonoBehaviour
                 startPos = mouseRay.GetPoint(_dis);
             }
         }
-        else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began || Input.GetMouseButton(0))
+        else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetMouseButton(0))
         {
             Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
             float _dis;
