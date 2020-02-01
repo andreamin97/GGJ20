@@ -11,19 +11,23 @@ public class DrawManager : MonoBehaviour
     Plane planeObj;
     Vector3 startPos;
 
-    DrawingCanvas dc;
+    public DrawingCanvas dc;
     private int layerNumber = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         planeObj = new Plane(Camera.main.transform.forward * -1, this.transform.position);
-        dc = FindObjectOfType<DrawingCanvas>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (dc == null)
+        {
+            dc = FindObjectOfType<DrawingCanvas>();
+        }
+
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began || Input.GetMouseButtonDown(0))
         {
             if (dc.isOnCanvas)
