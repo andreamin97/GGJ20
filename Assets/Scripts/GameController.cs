@@ -35,7 +35,7 @@ public class GameController : MonoBehaviour
         canvas = canvasObj.GetComponent<Canvas>();
         canvas.enabled = false;
 
-        string filename = ID + ".png";
+        string filename = ID+1 + ".png";
         ScreenCapture.CaptureScreenshot(filename, 1);
         Data.filename = filename;
         Debug.Log(filename);

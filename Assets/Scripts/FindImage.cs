@@ -6,13 +6,14 @@ using UnityEditor;
 
 public class FindImage : MonoBehaviour
 {
+    public Text imageNumber;
     private int number;
     // Start is called before the first frame update
     IEnumerator Start()
     {
         number = PlayerPrefs.GetInt("ID", number);
 
-        WWW www = new WWW("file:///" + Data.filename);
+        WWW www = new WWW("file:///" + number + ".png"/*Data.filename*/);
         Debug.Log ("file:///" + Data.filename);
         while (!www.isDone)
             yield return null;
@@ -22,12 +23,12 @@ public class FindImage : MonoBehaviour
 
     private void Update()
     {
-
+        imageNumber.text = number.ToString();
     }
 
     IEnumerator SetImage ()
     {
-        WWW www = new WWW("file:///" + Data.filename);
+        WWW www = new WWW("file:///GGJ20_Data/" + Data.filename);
         Debug.Log("file:///" + Data.filename);
         while (!www.isDone)
             yield return null;
@@ -43,7 +44,7 @@ public class FindImage : MonoBehaviour
     private IEnumerator Lft ()
     {
         number -= 1;
-        WWW www = new WWW("file:///" + number +".png");
+        WWW www = new WWW("file:///GGJ20_Data/" + number +".png");
         Debug.Log("file:///" + number);
         while (!www.isDone)
             yield return null;
@@ -59,7 +60,7 @@ public class FindImage : MonoBehaviour
     private IEnumerator Rht ()
     {
         number += 1;
-        WWW www = new WWW("file:///" + number+".png");
+        WWW www = new WWW("file:///GGJ20_Data/" + number+".png");
         Debug.Log("file:///" + number);
         while (!www.isDone)
             yield return null;
@@ -69,6 +70,6 @@ public class FindImage : MonoBehaviour
 
     public void SaveScreenshot()
     {
-        FileUtil.MoveFileOrDirectory(Data.filename, "C:/GGJ20_Screeshots/" + Data.filename);
+        //FileUtil.MoveFileOrDirectory(Data.filename, "C:/GGJ20_Screeshots/" + Data.filename);
     }
 }
