@@ -11,7 +11,7 @@ public class GameEnd : MonoBehaviour
     // Start is called before the first frame update
     IEnumerator Start()
     {
-        WWW www = new WWW("file:///GGJ20_Data/" + Data.filename);
+        WWW www = new WWW("file:///" + Data.filename);
 
         while(!www.isDone)
 			yield return null;

@@ -17,6 +17,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -96,6 +97,8 @@ ScriptsOnlyBuild:
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -266,7 +269,7 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 500c5323ccba295890cce52b4b8e799f
+      Hash: ae4e02a8cd9ebb15823b3f356adaeb53
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -744,4 +747,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Post-Game.unity
   - Assets/Scenes/Gallery.unity
-  playerPath: C:/Users/Nicola Dau/Desktop/GGJ20.exe
+  playerPath: D:/Unity Projects/Build/GGJ20.exe

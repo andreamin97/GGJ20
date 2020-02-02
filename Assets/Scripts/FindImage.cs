@@ -28,7 +28,7 @@ public class FindImage : MonoBehaviour
 
     IEnumerator SetImage ()
     {
-        WWW www = new WWW("file:///GGJ20_Data/" + Data.filename);
+        WWW www = new WWW("file:///" + Data.filename);
         Debug.Log("file:///" + Data.filename);
         while (!www.isDone)
             yield return null;
@@ -44,7 +44,7 @@ public class FindImage : MonoBehaviour
     private IEnumerator Lft ()
     {
         number -= 1;
-        WWW www = new WWW("file:///GGJ20_Data/" + number +".png");
+        WWW www = new WWW("file:///" + number +".png");
         Debug.Log("file:///" + number);
         while (!www.isDone)
             yield return null;
@@ -60,7 +60,7 @@ public class FindImage : MonoBehaviour
     private IEnumerator Rht ()
     {
         number += 1;
-        WWW www = new WWW("file:///GGJ20_Data/" + number+".png");
+        WWW www = new WWW("file:///" + number+".png");
         Debug.Log("file:///" + number);
         while (!www.isDone)
             yield return null;
