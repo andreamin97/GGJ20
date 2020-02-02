@@ -17,7 +17,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -66,7 +65,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11046}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11392}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -131,7 +130,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11046}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11392}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -194,9 +193,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11046}
     - Class: 114
-      Script: {instanceID: 11196}
+      Script: {instanceID: 11198}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11392}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -247,9 +246,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11046}
     - Class: 114
-      Script: {instanceID: 11138}
+      Script: {instanceID: 11140}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11392}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -627,6 +626,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Empty
+  - hash:
+      serializedVersion: 2
       Hash: 048ebe49e25f9e320aba0b8cf0d7582d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -739,4 +744,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Post-Game.unity
   - Assets/Scenes/Gallery.unity
-  playerPath: D:/Unity Projects/Build/GGJ20.exe
+  playerPath: C:/Users/Nicola Dau/Desktop/GGJ20.exe
